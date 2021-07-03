@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <title>JavaScript Fundamentals – Part 3</title>
+      </head>
+    <body>
+     <h1>Leap year</h1>
+     <script>
+         let checkString = function(str1,str2){
+              let  strchr1 = str1.split('');
+               let  strchr2 = str2.split('');
+                //  console.log(strchr1,strchr2);
+                  const arr = [];
+                 for (let i = 0; i < strchr1.length; i++) {
+                     for (let j = 0; j < strchr2.length; j++) {
+                        
+                         if(strchr1[i] == strchr2[j] && (!arr.includes(strchr1[i]))){
+                               arr.push(strchr1[i]);
+                         }
+                         
+                     }
+                     
+                     
+                 }
+                 console.log(arr.join(''));
+         }
 
+         checkString("I like Python","java is a very popular language");
+     </script>
+      </body>
+</html>
+          
